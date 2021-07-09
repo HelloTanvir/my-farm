@@ -1,0 +1,70 @@
+.footer {
+    background-color: #1F1E1E;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, max-content));
+    justify-content: space-around;
+    padding-top: 120px;
+}
+
+.footer .title, .footer .copy-rights, .footer .get-in-touch-with-us span:last-child {
+    color: #FFF;
+}
+
+.footer .title {
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.footer .contact-info {
+    display: grid;
+    grid-row-gap: 5px;
+}
+
+.footer .copy-rights {
+    font-size: 18px;
+}
+
+.footer .get-in-touch-with-us span:first-child, .footer .site-map div:not(.title), .footer .legal div:not(.title) {
+    color: #FF8F5D;
+}
+
+.footer > div {
+    min-height: 175px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer > .legal {
+    justify-content: unset;
+}
+
+.footer > .legal > div:nth-child(2) {
+    margin: 10px 0;
+}
+
+.footer .site-map > div:not(.title), .footer .legal > div:not(.title) {
+    cursor: pointer;
+}
+
+.footer .get-in-touch-with-us .address span:first-child::before, .footer .get-in-touch-with-us .email span:first-child::before, .footer .get-in-touch-with-us .phone span:first-child::before {
+    margin-right: 5px;
+    font-family: remixicon;
+}
+  
+.footer .get-in-touch-with-us .address span:first-child::before {
+    content: "\eb09";
+}
+  
+.footer .get-in-touch-with-us .email span:first-child::before {
+    content: "\eef6";
+}
+  
+.footer .get-in-touch-with-us .phone span:first-child::before {
+    content: "\eb41";
+}
+
+.footer .address, .footer .email, .footer .phone {
+    display: grid;
+    grid-template-columns: minmax(0, 90px) minmax(0, max-content);
+}
